@@ -1,0 +1,17 @@
+.sidebar,
+#sidebar,
+.side-bar,
+[aria-label='Related content'],
+.most-read,
+.recommended,
+.recommended-for-you,
+.trending,
+.related-content,
+.related-articles,
+.nw-c-related,
+.related,
+.recommended-list,
+[aria-label*='Recommended'],
+[aria-label*='Trending'] {
+  display: none !important;
+}

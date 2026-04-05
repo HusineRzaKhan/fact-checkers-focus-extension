@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ResearchFocus",
+  "version": "1.0",
+  "description": "Hide distracting news site sidebars and support quick WordPress blockquote copying.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ResearchFocus"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bbc.com/*",
+        "*://*.aljazeera.com/*",
+        "*://*.cnn.com/*",
+        "*://*.nytimes.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
